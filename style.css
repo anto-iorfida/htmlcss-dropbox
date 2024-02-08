@@ -15,7 +15,7 @@ img {
     GENERAL
 -------------------*/
 .btx{
-    padding: 6px 12px;
+    padding: 8px 12px;
     background-color: transparent;
     border: 1px solid transparent;
     font-size: 16px;
@@ -23,6 +23,10 @@ img {
 }
 .btx-blue{
     background-color:#0061ff ;
+}
+.btx-edge-only{
+    border: 1px solid black;
+    color: black;
 }
 .contenitor-large{
     max-width: 1200px;
@@ -114,7 +118,7 @@ header a{
 }
 /* ------------------------SECTION 2----- */
 .section-two{
-    height: 1600px;
+    height: 1700px;
 }
 .section-two h2{
     padding: 150px 0 30px 0;
@@ -179,6 +183,21 @@ header a{
 /* ------------------------SECTION 3----- */
 .section-three{
     height: 680px;
-    background-color: bisque;
+    /* background-color: bisque; */
+}
+.section-three .flex{
+    margin-top: 78px;
+}
+.section-three .flex *{
+    margin-bottom: 20px;
+}
+.section-three .col-40{
+    padding: 54px 56px;
+}
+.section-three h3{
+    font-size: 24px;
+}
+.section-three .btx{
+    margin-top: 14px;
 }
 
