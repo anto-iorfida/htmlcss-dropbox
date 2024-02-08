@@ -28,6 +28,9 @@ img {
     border: 1px solid black;
     color: black;
 }
+h2{
+    font-size: 40px;
+}
 .contenitor-large{
     max-width: 1200px;
     height: 100%;
@@ -121,8 +124,7 @@ header a{
     height: 1700px;
 }
 .section-two h2{
-    padding: 150px 0 30px 0;
-    font-size: 40px;   
+    padding: 150px 0 30px 0; 
 }
 .section-two input {
     padding: 20px 40px 50px 0px;
@@ -183,7 +185,6 @@ header a{
 /* ------------------------SECTION 3----- */
 .section-three{
     height: 680px;
-    /* background-color: bisque; */
 }
 .section-three .flex{
     margin-top: 78px;
@@ -200,4 +201,28 @@ header a{
 .section-three .btx{
     margin-top: 14px;
 }
+/* ------------------------SECTION 4----- */
+.section-four{
+    height: 1250px;
+}
+.section-four .flex{
+    gap: 50px;
+    margin-top: 80px;
+}
+.section-four h5{
+    font-size: larger;
+    margin-bottom: 40px;
+}
+/* ------------------------SECTION 5----- */
+.section-five{
+    height: 500px;
+    background-color: antiquewhite;
+}
+.box-title{
+    padding-top: 180px;
+}
+.box-title *{
+    margin-bottom: 60px ;
+}
+/* ------------------------SECTION 5----- */
 
