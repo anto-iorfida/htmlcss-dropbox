@@ -5,8 +5,54 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 1px dashed salmon; */
 }
-
 img {
     max-width: 100%;
 }
+/*-------------------
+    GENERAL
+-------------------*/
+.btx{
+    padding: 6px 12px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-size: 16px;
+    color:#f2f7ff ;
+}
+.btx-blue{
+    background-color:#0061ff ;
+}
+/*-------------------
+    HEADER
+-------------------*/
+header{
+    height: 80px;
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    color: #575757;
+    padding: 0 14px;
+}
+header ul{
+    height: 100%;
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+header a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-box-left{
+
+}
+.header-box-right{
+
+}
+/*-------------------
+    MAIN
+-------------------*/
+
