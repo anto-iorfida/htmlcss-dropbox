@@ -5,7 +5,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px dashed salmon; */
+    font-family: 'Open Sans', sans-serif;
+    border: 1px dashed salmon;
 }
 img {
     max-width: 100%;
@@ -22,6 +23,31 @@ img {
 }
 .btx-blue{
     background-color:#0061ff ;
+}
+.contenitor-large{
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.contenitor-small{
+    max-width: 1080px;
+    height: 100%;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+.relativ{
+    position: relative;
+}
+.col-30{
+    width: 30%;
+}
+.col-33{
+    width: calc(100% / 3)
+}
+.col-70{
+    width: 70%;
 }
 /*-------------------
     HEADER
@@ -55,4 +81,27 @@ header a{
 /*-------------------
     MAIN
 -------------------*/
-
+/* ------------------------SECTION 1----- */
+.section-one{
+    height: 740px;   
+}
+.section-one h1{
+    font-size: 70px;
+    font-weight: 700;
+    padding: 70px 0;
+}
+.section-one .col-30 *{
+    margin-bottom: 30px;
+}
+.section-one i{
+    font-size: 40px;
+    margin-top: 40px;
+}
+.section-one .relativ{
+    bottom: -20px;
+}
+/* ------------------------SECTION 2----- */
+.section-two{
+    background-color: bisque;
+    height: 1600px;
+}
