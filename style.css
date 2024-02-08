@@ -59,6 +59,9 @@ ul{
 .col-40{
     width: 40%;
 }
+.col-50{
+    width: 50%;
+}
 .col-60{
     width: 60%;
 }
@@ -216,7 +219,6 @@ header a{
 /* ------------------------SECTION 5----- */
 .section-five{
     height: 500px;
-    background-color: antiquewhite;
 }
 .box-title{
     padding-top: 180px;
@@ -224,5 +226,34 @@ header a{
 .box-title *{
     margin-bottom: 60px ;
 }
-/* ------------------------SECTION 5----- */
+/* ------------------------SECTION 6----- */
+.section-six{
+    height: 650px ;
+    background-color: antiquewhite;
+}
+.section-six *{
+    border: 1px dashed salmon;
+}
+.section-six .flex{
+    height: 100%;
+}
+.section-six .col-33{
+    height: 100%;
+}
+/* ------------------------SECTION 7----- */
+.section-seven{
+    height: 360px;
+    background-color: #b4d0e7;
+}
+.section-seven h2{
+    color: #61082b;
+}
+.section-seven .flex{
+    height: 100%;
+    align-items: center;
+}
+.section-seven .col-50{
+    justify-content: end;
+}
+
 
