@@ -26,6 +26,7 @@ img {
 }
 .btx-edge-only{
     border: 1px solid black;
+    background-color: white;
     color: black;
 }
 h2{
@@ -54,8 +55,8 @@ ul{
     position: relative;
 }
 .col-50pc{
-    height: 50%;
-    width: 50%;
+    height: 30vh;
+    width: 16vw;
 }
 .col-20{
     width: 20%;
@@ -81,11 +82,25 @@ ul{
 .col-100{
     width: 100%;
 }
+/****HOVER****/
+.btx-blue:hover{
+    background-color: rgb(101, 112, 212);
+}
+.btx-edge-only:hover{
+    background-color: rgb(241, 237, 237);
+}
+header li:hover{
+    color:#0061ff
+}
+.section-two .col-33:hover, .col-100:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.15);
+}
 /*-------------------
     HEADER
 -------------------*/
 header{
-    height: 80px;
+    min-height: 80px;
     display: flex;
     position: sticky;
     justify-content: space-between;
@@ -109,17 +124,18 @@ header a{
 .header-box-right{
 
 }
+
 /*-------------------
     MAIN
 -------------------*/
 /* ------------------------SECTION 1----- */
 .section-one{
-    height: 740px; 
+    height: 770px; 
     background-color: #b4d0e7;  
 }
 .section-one h1{
-    font-size: 70px;
-    font-weight: 700;
+    font-size: 80px;
+    font-weight: 800;
     padding: 70px 0;
 }
 .section-one .col-30 *{
@@ -134,7 +150,7 @@ header a{
 }
 /* ------------------------SECTION 2----- */
 .section-two{
-    height: 1700px;
+    min-height: 1700px;
 }
 .section-two h2{
     padding: 150px 0 30px 0; 
@@ -154,6 +170,8 @@ header a{
 .section-two .col-33{
     border: 1px solid #d0d0d3;
     height: 1000px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .section-two .col-33 hr{
     width: 50px;
@@ -198,6 +216,8 @@ header a{
     height: 260px;
     border: 1px solid #d0d0d3;
     margin-top: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .section-two .col-100 .btx{
     margin:  32px 32px 0 0;
@@ -205,7 +225,7 @@ header a{
 }
 /* ------------------------SECTION 3----- */
 .section-three{
-    height: 680px;
+    min-height: 680px;
 }
 .section-three .flex{
     margin-top: 78px;
@@ -221,7 +241,7 @@ header a{
 }
 /* ------------------------SECTION 4----- */
 .section-four{
-    height: 1250px;
+    min-height: 1250px;
 }
 .section-four .flex{
     gap: 50px;
@@ -233,7 +253,7 @@ header a{
 }
 /* ------------------------SECTION 5----- */
 .section-five{
-    height: 500px;
+    min-height: 500px;
 }
 .box-title{
     padding-top: 180px;
@@ -243,21 +263,60 @@ header a{
 }
 /* ------------------------SECTION 6----- */
 .section-six{
-    height: 600px ;
-    background-color: antiquewhite;
+    min-height: 400px ;
+    background-color: #f5f5f5;
 }
-.section-six *{
-    border: 1px dashed salmon;
+div.col-33.center{
+    padding: 50px;
+}
+div.col-33.center *{
+    margin-bottom: 40px;
+}
+div.col-33.center hr{
+    width: 110px;
+    color: #d0d0d3;
 }
 .section-six .flex{
-    
     flex-wrap: wrap;
 }
 .section-six .col-50pc{
-    text-align: center;    
+     
 }
 .section-six .col-33{
     height: 100%;
+}
+div.col-50pc.flex img{
+    max-width: 50%;
+}
+div.col-50pc.flex{
+    justify-content: center;
+    align-self: center;
+}
+/* ----STYLE BOX---- */
+.bg-olive-green{
+    background-color: #a2d39b;
+}
+.bg-dark-red{
+    background-color: #61082b;
+}
+.bg-heavenly{
+    background-color: #0093ce;
+}
+.bg-red{
+    background-color: #ff1c1c;
+}
+.bg-defective-red{
+    background-color: #d5001f;
+}
+
+.bg-lilac{
+    background-color: #b4d0e7;
+}
+.bg-dark-blue{
+    background-color: #0d2481;
+}
+.bg-yellow{
+    background-color:#ffd830;
 }
 /* ------------------------SECTION 7----- */
 .section-seven{
@@ -276,7 +335,7 @@ header a{
 }
 /* ------------------------SECTION 8----- */
 .section-eight{
-    height: 800px;
+    min-height: 800px;
 }
 .simple-box{
     padding-top: 100px;
@@ -300,7 +359,7 @@ header a{
     FOOTER
 -------------------*/
 footer{
-    height: 800px;
+    min-height: 800px;
     background-color: black;
     color: white;
     
