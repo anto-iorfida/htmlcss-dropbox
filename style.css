@@ -35,6 +35,12 @@ h2{
 h3{
     font-size: 24px;
 }
+h5{
+    font-size: 26px;
+}
+p{
+    font-size: 18px;
+}
 .contenitor-large{
     max-width: 1200px;
     height: 100%;
@@ -117,14 +123,6 @@ header a{
     text-decoration: none;
     color: inherit;
 }
-
-.header-box-left{
-
-}
-.header-box-right{
-
-}
-
 /*-------------------
     MAIN
 -------------------*/
@@ -132,6 +130,7 @@ header a{
 .section-one{
     height: 770px; 
     background-color: #b4d0e7;  
+    transition: 3s ease;
 }
 .section-one h1{
     font-size: 80px;
@@ -149,6 +148,13 @@ header a{
     bottom: -20px;
 }
 /* ------------------------SECTION 2----- */
+section:target {
+    background-color: lightcyan; 
+    animation: highlight 1s forwards; 
+}
+@keyframes highlight {
+    to { background-color: transparent; } 
+}
 .section-two{
     min-height: 1700px;
 }
@@ -169,16 +175,16 @@ header a{
 /* -----------------------COLOMN */
 .section-two .col-33{
     border: 1px solid #d0d0d3;
-    height: 1000px;
+    min-height: 1000px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.title-card small{
+    color:#6b6866;
 }
 .section-two .col-33 hr{
     width: 50px;
     margin: 50px 0;
-}
-.section-two .col-33 h5{
-    font-size: large;
 }
 .header-card-subscription{
     text-align: center;
@@ -248,7 +254,6 @@ header a{
     margin-top: 80px;
 }
 .section-four h5{
-    font-size: larger;
     margin-bottom: 40px;
 }
 /* ------------------------SECTION 5----- */
@@ -267,10 +272,13 @@ header a{
     background-color: #f5f5f5;
 }
 div.col-33.center{
-    padding: 50px;
+    padding: 50px 10px 0 50px;
 }
-div.col-33.center *{
-    margin-bottom: 40px;
+div.col-33.center img{
+    max-width: 40%
+}
+div.col-33.center *:not(:last-child){
+    margin-bottom: 30px;
 }
 div.col-33.center hr{
     width: 110px;
@@ -279,18 +287,19 @@ div.col-33.center hr{
 .section-six .flex{
     flex-wrap: wrap;
 }
-.section-six .col-50pc{
-     
-}
 .section-six .col-33{
     height: 100%;
 }
 div.col-50pc.flex img{
     max-width: 50%;
+    filter: invert(100%);
 }
 div.col-50pc.flex{
     justify-content: center;
     align-self: center;
+}
+.edit-special{
+   max-height: 50%;
 }
 /* ----STYLE BOX---- */
 .bg-olive-green{
@@ -308,7 +317,6 @@ div.col-50pc.flex{
 .bg-defective-red{
     background-color: #d5001f;
 }
-
 .bg-lilac{
     background-color: #b4d0e7;
 }
@@ -347,6 +355,11 @@ div.col-50pc.flex{
 .request{
     padding: 40px 0;
     border-top: 1px solid #999999;
+    font-weight: 700;
+    font-size: 22p0;
+}
+.request i{
+    margin-left: 350px ;
 }
 .questions:hover .answer{
     display: block;
