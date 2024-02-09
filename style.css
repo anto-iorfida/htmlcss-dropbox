@@ -255,5 +255,26 @@ header a{
 .section-seven .col-50{
     justify-content: end;
 }
+/* ------------------------SECTION 8----- */
+.section-eight{
+    height: 750px;
+}
+.simple-box{
+    padding-top: 100px;
+    border-bottom: 1px solid #999999;
+}
+.section-eight h2{
+    padding: 80px 0;
+}
+.request{
+    padding: 40px 0;
+    border-top: 1px solid #999999;
+}
+.questions:hover .answer{
+    display: block;
+}
+.answer{
+    display: none;
+}
 
 
