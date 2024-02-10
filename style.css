@@ -298,9 +298,14 @@ div.col-50pc.flex{
     justify-content: center;
     align-self: center;
 }
-.edit-special{
-   max-height: 50%;
+.edit-special {
+    padding-top: 13vh;
 }
+.edit-special img {
+    width: 100%;
+    /* height: 95px; */
+}
+
 /* ----STYLE BOX---- */
 .bg-olive-green{
     background-color: #a2d39b;
