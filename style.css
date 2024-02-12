@@ -24,7 +24,7 @@ h5{
     font-size: 26px;
 }
 p{
-    font-size: 18px;
+    font-size: 16px;
 }
 ul{
     list-style: none;
@@ -67,7 +67,7 @@ ul{
     position: relative;
 }
 .col-50pc{
-    height: 30vh;
+    height: 16vw;
     width: 16vw;
 }
 .col-20{
@@ -113,15 +113,8 @@ footer li:hover{
     box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.15);
 }
 /* -------Animation------------- */
-/* section:target {
-    background-color: lightcyan; 
-    animation: highlight 1s forwards; 
-}
-@keyframes highlight {
-    to { background-color: transparent; } 
-} */
-/* ---------------------- */
-/* button.btx:hover{
+/* ----------button moviment----------- */
+button.btx:hover{
     animation: vibra 0.5s ease-in-out;
 }
 @keyframes vibra {
@@ -130,9 +123,9 @@ footer li:hover{
     50% { transform: translateX(5px); }
     75% { transform: translateX(-5px); }
     100% { transform: translateX(0); }
-  } */
-  /* ----------------------- */
-  /* .section-one img{
+  } 
+  /* ---------animation img section 1 zoom-------------- */
+   .section-one img{
     animation: effetto-wow 4s;
   }
   @keyframes effetto-wow {
@@ -142,7 +135,15 @@ footer li:hover{
     to{
         padding-left: 0;
     }
-  } */
+  }
+   /* ----section 2 click a in li header----------- */
+  section:target {
+    background-color: lightcyan; 
+    animation: flash 1s forwards; 
+}
+@keyframes flash {
+    to { background-color: transparent; } 
+} 
 /*-------------------
     HEADER
 -------------------*/
@@ -178,7 +179,7 @@ header a{
     transition: 3s ease;
 }
 .section-one h1{
-    font-size: 76px;
+    font-size: 74px;
     font-weight: 800;
     padding-top: 80px;
 }
@@ -193,13 +194,6 @@ header a{
     bottom: -84px;
 }
 /* ------------------------SECTION 2----- */
-section:target {
-    background-color: lightcyan; 
-    animation: highlight 1s forwards; 
-}
-@keyframes highlight {
-    to { background-color: transparent; } 
-}
 .section-two{
     min-height: 1700px;
 }
@@ -274,6 +268,9 @@ section:target {
     margin:  32px 32px 0 0;
     width:240px;
 }
+.section-two .col-100 .card p:last-child{
+    padding-top: 26px;
+}
 /* ------------------------SECTION 3----- */
 .section-three{
     min-height: 680px;
@@ -313,7 +310,7 @@ section:target {
 }
 /* ------------------------SECTION 6----- */
 .section-six{
-    min-height: 400px ;
+    height: 32vw;
     background-color: #f5f5f5;
 }
 div.col-33.center{
@@ -344,11 +341,15 @@ div.col-50pc.flex{
     align-self: center;
 }
 .edit-special {
-    padding-top: 13vh;
+    padding-top: 7vw;
+}
+.center{
+    overflow: hidden;
 }
 /* ----STYLE BOX---- */
 .bg-olive-green{
     background-color: #a2d39b;
+    border: 20px solid #d1e9cd;
 }
 .bg-dark-red{
     background-color: #61082b;
